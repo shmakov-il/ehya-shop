@@ -1,0 +1,56 @@
+.collection
+  margin-bottom: 145px
+  &-container
+    max-width: 1140px
+    width: 90%
+    margin: auto
+  &-photo
+    margin-right: 57px
+    display: grid
+    grid-template-columns: 320px 320px
+    grid-template-rows: 230px 230px
+    grid-row: 1 / 2
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    &__new
+      border-radius: 8px
+      overflow: hidden
+      &--row
+        grid-row: 1 / 3
+  &-wrapper
+    display: flex
+  &-title
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $title-color
+    margin: 0
+    margin-bottom: 24px
+  &-text
+    max-width: 392px
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $text-color
+    margin: 0
+    margin-bottom: 32px
+  &-view
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 259px
+  &-link
+    margin-right: 19px
+    font-style: normal
+    text-decoration: none
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: #1565D8
+  &-icon
+    width: 13px
+    height: 16px
