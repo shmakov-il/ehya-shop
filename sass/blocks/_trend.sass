@@ -25,12 +25,9 @@
       line-height: 25px
       margin-left: 38px
       text-decoration: none
-    &__one
-      color: $title-color
-      font-weight: bold
-    &__two, &__three
       color: $text-color
-      font-weight: normal
+      cursor: pointer
+
   &-bottom
     display: flex
     justify-content: space-between
@@ -99,3 +96,14 @@
   height: 350px
   border-radius: 8px
   object-fit: cover
+.trend-bottom
+  display: none
+.trend-bottom--active
+  display: flex
+  justify-content: space-between
+  align-items: center
+  align-content: space-between
+  flex-wrap: wrap
+.tabs-item--active
+  font-weight: bold
+  color: $title-color
