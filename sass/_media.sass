@@ -19,6 +19,16 @@
   .hero
     &-container
       margin-bottom: 80px
+  .trend
+    &-container
+      max-width: 960px
+    &-bottom
+      &__card
+        &:nth-child(8), &:nth-child(7)
+          margin: 0
+          margin-right: auto
+          margin-left: auto
+
 @media ( max-width: 976px )
   .container
     max-width: 850px
@@ -60,6 +70,22 @@
       padding: 50px 0 46px 50px
     &-text
       max-width: 600px
+  .trend
+    &-container
+      max-width: 850px
+
+@media ( max-width: 900px )
+  .trend
+    margin-bottom: 81px
+    &-container
+      max-width: 608px
+    &-bottom
+      &__card
+        width: 280px
+        height: 450px
+        margin-bottom: 24px
+        &:nth-child(8), &:nth-child(7)
+          margin: 0
 @media ( max-width: 768px )
   .header
     padding: 26px 0 18px 0
@@ -67,6 +93,16 @@
   .hero
     &-info
       padding: 36px 0 36px 28px
+  .trend
+    &-top
+      flex-direction: column
+      align-items: center
+      margin-bottom: 55px
+    &-title
+      margin-bottom: 27px
+    &-category
+      &__one
+        margin: 0
 
 @media ( max-width: 745px )
   .collection
@@ -92,7 +128,32 @@
     &-button
       font-size: 14px
       line-height: 20px
+@media ( max-width: 666px )
+  .trend
+    &-container
+      max-width: 600px
+    &-bottom
+      &__card
+        width: 260px
+        height: 450px
+@media ( max-width: 600px )
+  .trend
+    &-container
+      max-width: 500px
+    &-bottom
+      &__card
+        width: 220px
+        height: 380px
+      &__background
+        height: 280px
+        padding: 100px 10px 10px 10px
+      &__textp
+        font-size: 17px
+        line-height: 20px
 
+  .card
+    &-image
+      height: 280px
 @media ( max-width: 583px )
   .collection
     &-photo
@@ -120,6 +181,28 @@
   .hero
     &-info
       padding: 300px 0 10px 28px
+  .trend
+    &-container
+      max-width: 400px
+    &-bottom
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-top: 13px
+        margin-bottom: 3px
+      &__price
+        font-size: 14px
+        line-height: 24px
+      &__card
+        width: 180px
+        height: 275px
+      &__background
+        height: 210px
+        padding: 70px 10px 10px 10px
+  .card
+    &-image
+      height: 210px
+
 @media ( max-width: 678px )
   .hero
     &-info
@@ -136,6 +219,39 @@
   .hero
     &-info
       background-position: 76% 50%
+@media ( max-width: 420px )
+  .trend
+    &-top
+      margin-bottom: 36px
+    &-title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &-category
+      &__one, &__two, &__three
+        margin-left: 16px
+      &__one
+        margin: 0
+    &-bottom
+      &__card
+        width: 140px
+        height: 234px
+        margin-left: auto
+        margin-right: auto
+        &:nth-child(8), &:nth-child(7)
+          margin-left: auto
+          margin-right: auto
+      &__background
+        height: 170px
+        padding: 40px 10px 23px 10px
+      &__info
+        justify-content: start
+      &__price
+        margin-right: 9px
+  .card
+    &-image
+      height: 170px
+
 @media ( max-width: 400px )
   .hero
     &-info
@@ -177,10 +293,22 @@
   .header
     padding: 26px 0 18px 0
     margin-bottom: 30px
+
+@media ( max-width: 340px )
+  &-bottom
+    &__card
+      margin-left: 0
+      margin-right: 0
+      &:nth-child(8), &:nth-child(7)
+        margin-left: 0
+        margin-right: 0
 @media ( max-width: 320px )
   .container
     max-width: 272px
   .collection
+    margin-bottom: 110px
+    &-text
+      max-width: 280px
     &-container
       max-width: 290px
   .header
