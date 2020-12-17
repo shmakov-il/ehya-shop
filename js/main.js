@@ -9,6 +9,8 @@ $(document).ready(function () {
     $(activeContent).addClass('trend-bottom--active');
     $(this).addClass('tabs-item--active');
   });
+
+  
 });
 
 
