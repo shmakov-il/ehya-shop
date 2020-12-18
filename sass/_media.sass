@@ -14,8 +14,35 @@
     &-text
       max-width: 672px
       margin-bottom: 24px
+  .stories
+    &-container
+      flex-direction: column
+      align-items: center
     &-info
       margin: auto
+      max-width: 900px
+    &-container
+      flex-direction: column
+      padding-top: 79px
+    &-info
+      margin: auto
+      max-width: 900px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-text
+      max-width: 882px
+      margin-top: 0
+      margin-bottom: 36px
+      text-align: center
+    &-title
+      text-align: center
+      margin-top: 24px
+      margin-bottom: 16px
+    &-tabs
+      margin-bottom: 36px
+      &__next
+        margin: 0
   .hero
     &-container
       margin-bottom: 80px
@@ -28,7 +55,10 @@
           margin: 0
           margin-right: auto
           margin-left: auto
-
+  .reviews
+    &-container
+      max-width: 960px
+      margin: auto
 @media ( max-width: 976px )
   .container
     max-width: 850px
@@ -86,10 +116,6 @@
         margin-bottom: 24px
         &:nth-child(8), &:nth-child(7)
           margin: 0
-  .swiper
-    &-container
-      max-width: 700px
-      min-height: 389px
 @media ( max-width: 768px )
   .header
     padding: 26px 0 18px 0
@@ -108,15 +134,33 @@
       &__one
         margin: 0
   .swiper
-    &-container
-      max-width: 630px
-      min-height: 415px
+
     &-title
       margin-bottom: 33px
     &-text
       max-width: 630px
       height: 210px
       overflow: auto
+  .stories
+    &-title
+      margin-top: 24px
+      margin-bottom: 16px
+    &-text
+      max-width: 568px
+      margin-bottom: 36px
+    &-tabs
+      margin-bottom: 36px
+    &-slider
+      width: 682px
+  .block, .card
+    width: 332px
+  .swiper-slide__image
+    width: 322px
+
+  .swiper-slide__text
+    padding: 20px 42px 20px 20px
+    width: 322px
+
 @media ( max-width: 745px )
   .collection
     &-photo
@@ -126,6 +170,26 @@
       grid-row-gap: 14px
     &-container
       width: 90%
+  .stories
+    &-slider
+      width: 600px
+      height: 407px
+  .block, .card
+    width: 280px
+    height: 407px
+  .swiper-slide__image
+    width: 270px
+    height: 277px
+  .swiper-slide__text
+    padding: 20px 10px 20px 20px
+    width: 270px
+    height: 150px
+  .swiper-slide__about
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    margin-bottom: 17px
+
 @media ( max-width: 700px )
   .hero
     &-info
@@ -149,10 +213,24 @@
       &__card
         width: 260px
         height: 450px
+
 @media ( max-width: 665px )
-  .swiper
-    &-container
-      max-width: 550px
+  .stories
+    &-slider
+      height: 839px
+      width: 350px
+  .blocks
+    flex-direction: column
+    align-items: center
+  .block, .card
+    width: 350px
+  .swiper-slide__image
+    width: 340px
+    height: 277px
+  .swiper-slide__text
+    width: 340px
+    height: 150px
+
 @media ( max-width: 600px )
   .trend
     &-container
@@ -167,10 +245,10 @@
       &__textp
         font-size: 17px
         line-height: 20px
-
   .card
     &-image
       height: 280px
+
 @media ( max-width: 583px )
   .collection
     &-photo
@@ -181,7 +259,7 @@
           grid-column: 1 / 3
   .swiper
     &-container
-      max-width: 470px
+      // max-width: 470px
     &-text
       height: 400px
       padding: 0 30px 0 30px
@@ -241,6 +319,17 @@
   .hero
     &-info
       background-position: 76% 50%
+  .stories
+    &-slider
+      width: 280px
+  .block, .card
+    width: 280px
+    .swiper-slide__image
+      width: 270px
+      height: 277px
+  .swiper-slide__text
+    width: 270px
+    height: 150px
 @media ( max-width: 420px )
   .trend
     margin-bottom: 48px
@@ -403,9 +492,6 @@
   .reviews
     margin-bottom: 64px
   .swiper
-    &-container
-      max-width: 280px
-      min-height: 555px
     &-text
       height: 360px
       padding: 0

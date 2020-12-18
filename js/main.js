@@ -22,8 +22,8 @@ var autoSlider = document.querySelector('.swiper-container');
     mySwiper.autoplay.stop();
   };
 
-
-var mySwiper = new Swiper('.swiper-container', {
+// Первый слайдер
+var mySwiper = new Swiper('.slider', {
   // Optional parameters
   loop: true,
 
@@ -36,14 +36,20 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+});
+
+// Первый слайдер
+var mySwiperTwo = new Swiper('.myslider', {
+  // Optional parameters
+  loop: true,
+  
+
+  navigation: {
+    nextEl: '.stories-tabs__next',
+    prevEl: '.stories-tabs__prev',
   },
 })
