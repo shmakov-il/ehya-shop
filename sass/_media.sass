@@ -88,6 +88,11 @@
   .collection
     &-container
       max-width: 850px
+  .modal
+    &__dialog
+      padding-left: 55px
+      padding-right: 55px
+      width: 80%
 @media ( max-width: 920px )
   .container
     max-width: 850px
@@ -306,6 +311,10 @@
       align-items: center
       text-align: center
       margin: auto
+  .modal
+    &__dialog
+      padding-left: 55px
+      padding-right: 55px
 @media ( max-width: 666px )
   .trend
     &-container
@@ -377,6 +386,11 @@
       align-items: flex-start
       &__one, &__two
         margin-bottom: 10px
+  .modal
+    &__dialog
+      width: 95%
+      padding-left: 35px
+      padding-right: 35px
 
 @media ( max-width: 521px )
   .hero
@@ -427,6 +441,10 @@
       height: 48px
     &__icon
       top: 18px
+  #subscribe-error
+    margin-left: 49px
+    font-size: 10px
+    top: 32px
 @media ( max-width: 678px )
   .hero
     &-info
@@ -451,6 +469,10 @@
   .hero
     &-info
       background-position: 74% 50%
+  .modal
+    &__dialog
+      padding-left: 20px
+      padding-right: 20px
 @media ( max-width: 454px )
   .hero
     &-info
@@ -661,3 +683,10 @@
       line-height: 24px
     &__item
       margin-bottom: 15px
+
+@media ( max-width: 812px ) and ( max-height: 375px ) and ( orientation: landscape )
+  .modal
+    overflow: scroll
+    &__dialog
+      overflow: auto
+      height: 300px

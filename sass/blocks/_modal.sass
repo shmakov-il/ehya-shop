@@ -1,0 +1,91 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: rgba(209, 215, 219, 0.39)
+    z-index: 9999
+    visibility: hidden
+    opacity: 0
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 87px 33px 87px
+    background-color: #c5c5c5
+    transform: translate(-50%, -50%)
+    border-radius: 8px
+    color: #fff
+    z-index: 10000
+    visibility: hidden
+    opacity: 0
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__input
+    width: 100%
+    margin-top: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    padding: 15px 15px 15px 15px
+    border-radius: 7px
+    outline: none
+    border: none
+  &__textarea
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    resize: none
+    padding: 15px 0 0 15px
+    outline: none
+    border: none
+    border-radius: 7px
+  &__button
+    margin-top: 15px
+    min-width: 160px
+    min-height: 50px
+    margin-right: 41px
+    padding: 18px 65px 17px 66px
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 15px
+    background-color: #183B56
+    color: #fff
+    border-radius: 7px
+    outline: none
+    border: none
+    width: 100%
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #4b4b49
+    padding-left: 15px
+  &__title
+    margin: 0
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+    color: #183B56

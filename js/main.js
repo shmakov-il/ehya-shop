@@ -12,13 +12,63 @@ $(document).ready(function () {
 
   $('.newsletter__form').validate( {
   messages: {  
-    email: {
-      required: 'Please fill out the form',
-      email: 'Required format name@post.com/en/ru',
+    subscribe: {
+      required: 'Пожалуйста, заполните форму',
+      email: 'Нужный формат name@post.com/en/ru',
     },
   },
   });
-  
+  var modalButton = $('[data-toggle=modal]')
+  var modalCloseButton = $('.modal__close')
+  var closeModalButtonAll = $('.modal__overlay');
+  modalButton.on('click', openModal);
+  modalCloseButton.on('click', closeModal);
+  closeModalButtonAll.on('click', closeModal);
+
+  function openModal() {
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
+  };
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+  };
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+$(document).on('keydown', function (e) {
+  if (e.keyCode === 27) {
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+  }
+});
+$('.telphone').mask('+7 (000) 000-00-00');
+$('.form').each( function() {
+  $( this ).validate( {
+    errorClass: "invalid",
+    messages: {
+    
+    bookingName: {
+      required: "Пожалуйста, введите имя",
+      minlength: "Короткое имя",
+    },
+    bookingPhone: {
+      required: "Пожалуйста, введите номер телефона",
+      minlength: "Нужный формат +7 (xxx) xxx xx xx",
+    },
+    bookingSubscribe: {
+      required: "Пожалуйста, введите email",
+      email: "Нужный формат name@post.com/en/ru",
+    }, 
+    
+  }, 
+  });
+});
 });
 
 
