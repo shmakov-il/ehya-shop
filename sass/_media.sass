@@ -198,13 +198,51 @@
     &__block
       margin-bottom: 27px
 @media ( max-width: 768px )
+  .container
+    width: 647px
   .header
     padding: 26px 0 18px 0
     margin-bottom: 30px
   .hero
+    &-container
+      border-radius: 8px
+      overflow: hidden
+      max-width: 729px
     &-info
       padding: 36px 0 36px 28px
+      background-position: 63% 50%
+    &-title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 21px
+    &-badges
+      margin-bottom: 24px
+    &-text
+      font-size: 18px
+      line-height: 32px
+      max-width: 433px
+      margin-bottom: 35px
+    &-button
+      margin-bottom: 43px
+  .hero-advantages__text
+    margin-right: 22px
+  .collection
+    &-info
+      margin: auto
+    &-photo
+      margin-bottom: 26px
   .trend
+    margin-bottom: 74px
+    &-bottom
+      &__textp
+        max-width: 224px
+      &__title
+        margin: 17px 10px 3px 10px
+      &__info
+        max-width: 258px
+        margin: 0px 0px 0px 11px
+      &__card
+        margin-bottom: 38px
     &-top
       flex-direction: column
       align-items: center
@@ -215,14 +253,16 @@
       &__one
         margin: 0
   .swiper
-
     &-title
-      margin-bottom: 33px
+      margin-bottom: 49px
     &-text
-      max-width: 630px
+      max-width: 611px
       height: 210px
       overflow: auto
+    &-icon
+      margin-bottom: 39px
   .stories
+    margin-bottom: 80px
     &-title
       margin-top: 24px
       margin-bottom: 16px
@@ -241,9 +281,15 @@
     padding: 20px 42px 20px 20px
     width: 322px
   .footer
+    padding-top: 65px
+    &-container
+      max-width: 648px
+    &-main
+      margin-right: 43px
     &-info
-      margin-right: -14px
+      margin-right: -17px
       justify-content: start
+      width: 726px
     &__block
       margin-right: 13px
 
@@ -585,6 +631,7 @@
     padding: 18px 0 18px 0
     margin-bottom: 24px
   .hero
+    margin-top: 88px
     &-container
       margin-bottom: 64px
     &-info
@@ -598,7 +645,7 @@
     &-badges
       max-width: 196px
       padding: 2px 26px 2px 26px
-      margin-bottom: 22px
+      margin-bottom: 19px
     &-title
       margin-bottom: 20px
       font-size: 32px
@@ -615,6 +662,8 @@
     &-advantages
       flex-direction: row
       flex-wrap: wrap
+      &__one, &__two
+        margin-bottom: 16px
       &__text
         margin-right: 0
       &__one
@@ -629,7 +678,7 @@
   .collection
     margin-bottom: 110px
     &-photo
-      margin-bottom: 36px
+      margin-bottom: 19px
       grid-template-columns: 138px 138px
       grid-template-rows: 186px 100px 97px
       &__new
@@ -647,8 +696,33 @@
       margin-bottom: 0
     &-view
       display: none
+  .trend
+    &-category
+      &__one, &__two, &__three
+        font-size: 16px
+        line-height: 22px
+      &__two, &__three
+        margin-left: 12px
+    &-bottom
+      &__title
+        margin: 12px 9px 1px 0px
+      &__icon
+        width: 14px
+        height: 14px
+      &__price
+        margin-right: 13px
+      &__info
+        margin: 0px 0px 0px 0px
+      &__card
+        margin-bottom: 19px
+      &__iconp
+        width: 25px
+        height: 25px
+        margin-bottom: 21px
+      &__background
+        padding-top: 45px
   .reviews
-    margin-bottom: 64px
+    margin-bottom: 67px
   .swiper
     &-text
       height: 360px
@@ -658,10 +732,36 @@
       text-align: center
       letter-spacing: 0.12px
       margin-bottom: 24px
+      width: 266px
     &-title
-      margin-bottom: 24px
+      margin-bottom: 41px
+      width: 145px
     &-icon
-      margin-bottom: 13px
+      margin-bottom: 27px
+      width: 69px
+      height: 61px
+  .stories
+    margin-bottom: 64px
+    &-container
+      padding-top: 42px
+    &-title
+      font-size: 28px
+      line-height: 36px
+      width: 291px
+      margin-top: 20px
+      margin-bottom: 16px
+    &-text
+      font-size: 16px
+      line-height: 28px
+    &-tabs
+      width: 111px
+      margin-bottom: 26px
+      &__next, &__prev
+        width: 48px
+        height: 48px
+  .newsletter
+    &__input
+      width: 280px
   .footer
     padding: 48px 63px 73px 21px
     &__block
