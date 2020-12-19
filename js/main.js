@@ -85,9 +85,9 @@ var mySwiper = new Swiper('.slider', {
   // Optional parameters
   loop: true,
 
-  autoplay: {
-    delay: 7000,
-  },
+  // autoplay: {
+  //   delay: 7000,
+  // },
 
   // If we need pagination
   pagination: {
