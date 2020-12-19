@@ -5,27 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин одежды Ehya</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header__mobile">
     <div class="container">
       <div class="header-wrapper">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo.svg" alt="Icon: Logo">
         </a>
-        <nav class="header__nav">
-          <ul class="header-list">
-            <li class="header-item"><a href="#" class="header-item__link">Главная</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Новинки</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Тренды</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Отзывы</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <button class="header-button">Войти</button>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="header-list">
+              <li class="header-item"><a href="#" class="header-item__link">Главная</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Новинки</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Тренды</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Отзывы</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <button data-toggle="modal" class="header-button">Войти</button>
+          <div class="header-close">
+            <img src="img/close.svg" alt="Icon: close" class="header-close__mobile">
+          </div>
+
+        </div>
         <button class="button-menu">
           <span class="button-menu__line"></span>
           <span class="button-menu__line"></span>
@@ -35,8 +43,6 @@
     </div>
   </header>
   <!-- /.header -->
-
-
   <section class="newsletter">
     <div class="newsletter-container">
       <div class="newsletter-wrapper">
@@ -56,25 +62,25 @@
     </div>
     <!-- /.newsletter-container -->
   </section>
-  <!-- /.newsletter -->
+
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-main">
-        <a href="#" class="footer__logo">
+        <a href="index.html" class="footer__logo">
           <img src="img/logo.svg" alt="Icon: Logo">
         </a>
         <p class="footer__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
         <div class="footer__social">
-          <a href="https://www.google.ru/" class="background__icon" target="_blank">
+          <a href="https://www.google.ru/" class="footer-icon" target="_blank">
             <img class="footer__icon" src="img/gmail.svg" alt="Icon: gmail">
           </a>
-          <a href="https://twitter.com/" class="background__icon" target="_blank">
+          <a href="https://twitter.com/" class="footer-icon" target="_blank">
             <img class="footer__icon" src="img/twitter.svg" alt="Icon: twitter">
           </a>
-          <a href="https://www.instagram.com/" class="background__icon" target="_blank">
+          <a href="https://www.instagram.com/" class="footer-icon" target="_blank">
             <img class="footer__icon" src="img/inst.svg" alt="Icon: inst">
           </a>
-          <a href="https://www.facebook.com/" class="background__icon" target="_blank">
+          <a href="https://www.facebook.com/" class="footer-icon" target="_blank">
             <img class="footer__icon" src="img/facebook.svg" alt="Icon: facebook">
           </a>
         </div>
@@ -123,8 +129,41 @@
     <!-- /.footer-container -->
   </footer>
   <!-- /.footer -->
+
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title modal__title--mb4">Свяжитесь с нами</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <div class="check">
+          <input type="text" class="input modal__input" placeholder="Ваше имя*" name="bookingName" required
+            minlength="2">
+        </div>
+        <div class="check">
+          <input type="text" class="input modal__input telphone" placeholder="Ваш номер телефона*" name="bookingPhone"
+            required minlength="18">
+        </div>
+        <div class="check">
+          <input type="email" class="input modal__input" placeholder="Ваш email*" name="bookingSubscribe" required>
+        </div>
+        <textarea class="modal__textarea" placeholder="Оставьте сообщение" name="bookingMessage"></textarea>
+        <span class="modal__info">* Обязательное поле</span>
+        <button class="button modal__button">Отправить</button>
+
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 
 

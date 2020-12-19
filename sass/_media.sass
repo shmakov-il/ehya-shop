@@ -117,6 +117,7 @@
       flex-direction: row
       padding: 0
       margin: 0
+      width: 920px
     &-button
       padding: 9px 101px
       width: 100%
@@ -132,7 +133,7 @@
       top: 10px
       right: 20px
       cursor: pointer
-  .mobile__close
+  .header-close__mobile
     width: 16px
     height: 16px
   .button
@@ -152,7 +153,7 @@
         height: 2.2px
         background: #3A4C66
         border-radius: 10px
-  .navbar
+  .header
     &__menu
       padding: 36px 24px
       display: none
@@ -199,7 +200,7 @@
       margin-bottom: 27px
 @media ( max-width: 768px )
   .container
-    width: 647px
+    max-width: 647px
   .header
     padding: 26px 0 18px 0
     margin-bottom: 30px
@@ -507,7 +508,7 @@
       flex-direction: column
     &-button
       width: auto
-  .navbar
+  .header
     &__menu
       width: 304px
       height: 324px
@@ -813,7 +814,7 @@
   .stories-tabs__prev
     &:hover
       border: 2px solid #183B56
-  .background__icon
+  .footer-icon
     &:hover
       background-color: #c3c5c5
       opacity: 0.4

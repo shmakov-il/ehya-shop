@@ -115,11 +115,11 @@ var mySwiperTwo = new Swiper('.myslider', {
 var menuButton = document.querySelector('.button-menu');
 menuButton.addEventListener('click', function() {
 console.log('ok');
-document.querySelector('.navbar__menu').classList.toggle('navbar__menu--visible');
+document.querySelector('.header__menu').classList.toggle('header__menu--visible');
 });
 
 var menuClose = document.querySelector('.header-close');
 menuClose.addEventListener('click', function() {
 console.log('error');
-document.querySelector('.navbar__menu').classList.remove('navbar__menu--visible');
+document.querySelector('.header__menu').classList.remove('header__menu--visible');
 });
