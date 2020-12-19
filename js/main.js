@@ -10,6 +10,14 @@ $(document).ready(function () {
     $(this).addClass('tabs-item--active');
   });
 
+  $('.newsletter__form').validate( {
+  messages: {  
+    email: {
+      required: 'Please fill out the form',
+      email: 'Required format name@post.com/en/ru',
+    },
+  },
+  });
   
 });
 
@@ -52,4 +60,5 @@ var mySwiperTwo = new Swiper('.myslider', {
     nextEl: '.stories-tabs__next',
     prevEl: '.stories-tabs__prev',
   },
-})
+});
+
