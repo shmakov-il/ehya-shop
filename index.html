@@ -4,26 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин одежды Ehya</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header__mobile">
     <div class="container">
       <div class="header-wrapper">
         <a href="#" class="logo">
           <img src="img/logo.svg" alt="Icon: Logo">
         </a>
-        <nav class="header__nav">
-          <ul class="header-list">
-            <li class="header-item"><a href="#" class="header-item__link">Главная</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Новинки</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Тренды</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Отзывы</a></li>
-            <li class="header-item"><a href="#" class="header-item__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <button class="header-button">Войти</button>
+        <div class="navbar__menu">
+          <nav class="header__nav">
+            <ul class="header-list">
+              <li class="header-item"><a href="#" class="header-item__link">Главная</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Новинки</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Тренды</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Отзывы</a></li>
+              <li class="header-item"><a href="#" class="header-item__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="header-button">Войти</button>
+          <div class="header-close">
+            <img src="img/close.svg" alt="Icon: close" class="mobile__close">
+          </div>
+          
+        </div>
         <button class="button-menu">
           <span class="button-menu__line"></span>
           <span class="button-menu__line"></span>
