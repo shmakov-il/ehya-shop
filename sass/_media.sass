@@ -73,6 +73,15 @@
       margin-bottom: 14px
     &__text
       margin-bottom: 56px
+@media ( max-width: 1100px )
+  .footer
+    padding-top: 84px
+    padding-bottom: 80px
+    &-info
+      flex-wrap: wrap
+    &__block
+      flex-basis: 180px
+      margin-bottom: 17px
 @media ( max-width: 976px )
   .container
     max-width: 850px
@@ -130,6 +139,12 @@
         margin-bottom: 24px
         &:nth-child(8), &:nth-child(7)
           margin: 0
+@media ( max-width: 924px )
+  .footer
+    &-info
+      justify-content: space-evenly
+    &__block
+      margin-bottom: 27px
 @media ( max-width: 768px )
   .header
     padding: 26px 0 18px 0
@@ -170,10 +185,15 @@
     width: 332px
   .swiper-slide__image
     width: 322px
-
   .swiper-slide__text
     padding: 20px 42px 20px 20px
     width: 322px
+  .footer
+    &-info
+      margin-right: -14px
+      justify-content: start
+    &__block
+      margin-right: 13px
 
 @media ( max-width: 745px )
   .collection
@@ -219,6 +239,26 @@
     &-button
       font-size: 14px
       line-height: 20px
+  .footer
+    &-container
+      max-width: 500px
+      margin: auto
+      flex-direction: column
+    &-main
+      order: 1
+    &-info
+      order: -1
+      width: auto
+      max-width: 506px
+      justify-content: space-between
+    &__block
+      flex-basis: 158px
+    &-main
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      margin: auto
 @media ( max-width: 666px )
   .trend
     &-container
@@ -541,3 +581,24 @@
       margin-bottom: 24px
     &-icon
       margin-bottom: 13px
+  .footer
+    padding: 48px 63px 73px 21px
+    &__block
+      margin-bottom: 15px
+    &-info
+      margin-bottom: 31px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &__text
+      margin-bottom: 20px
+      margin-top: 16px
+      width: 261px
+      font-size: 14px
+      line-height: 24px
+    &__item
+      margin-bottom: 15px
