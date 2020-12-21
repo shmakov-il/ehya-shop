@@ -27,16 +27,17 @@
       text-decoration: none
       color: $text-color
       cursor: pointer
-
   &-bottom
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
     align-content: space-between
     flex-wrap: wrap
+    &--active
+      align-items: flex-start
     &__card
       width: 260px
-      height: 441px
+      min-height: 441px
       border-radius: 8px
       overflow: hidden
       margin-bottom: 50px
@@ -101,7 +102,7 @@
 .trend-bottom--active
   display: flex
   justify-content: space-between
-  align-items: center
+  align-items: flex-start
   align-content: space-between
   flex-wrap: wrap
 .tabs-item--active

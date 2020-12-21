@@ -1,13 +1,19 @@
+@media ( max-width: 1920px )
+  .newsletter
+    background-size: 100%
+@media ( max-width: 1440px )
+  .newsletter
+    background-size: auto
 @media ( max-width: 1300px )
   .newsletter
     &-wrapper
-      padding: 100px 150px 100px 150px
+      padding: 100px 0 100px 0
 
 @media ( max-width: 1200px )
   .container
     max-width: 960px
   .collection
-    margin-bottom: 79px
+    padding-bottom: 79px
     &-container
       max-width: 960px
     &-wrapper
@@ -50,16 +56,19 @@
         margin: 0
   .hero
     &-container
-      margin-bottom: 80px
+      padding-bottom: 80px
   .trend
     &-container
       max-width: 960px
     &-bottom
       &__card
-        &:nth-child(8), &:nth-child(7)
-          margin: 0
-          margin-right: auto
-          margin-left: auto
+        &:nth-child(6), &:nth-child(7)
+          display: none
+        // &:nth-child(8), &:nth-child(7)
+        //   margin: 0
+        //   margin-right: auto
+        //   margin-left: auto
+        //   display: none
   .reviews
     &-container
       max-width: 960px
@@ -73,6 +82,7 @@
       margin-bottom: 14px
     &__text
       margin-bottom: 56px
+
 @media ( max-width: 1100px )
   .footer
     padding-top: 84px
@@ -155,23 +165,21 @@
         border-radius: 10px
   .header
     &__menu
-      padding: 36px 24px
+      padding: 36px 24px 25px 24px
       display: none
       position: fixed
       left: 50%
       transform: translateX(-50%)
       right: 0
-      bottom: 0
       top: 10px
       background-color: #fff
       width: 94%
-      height: 170px
-
       &--visible
         display: block
-
+    &__nav
+      margin-bottom: 15px
   .hero
-    margin-top: 102px
+    padding-top: 102px
     &-info
       padding: 50px 0 46px 50px
     &-text
@@ -179,6 +187,9 @@
   .trend
     &-container
       max-width: 850px
+  .thankyou
+    &__container
+      padding: 177px 0 50px 0
 
 @media ( max-width: 900px )
   .trend
@@ -188,22 +199,27 @@
     &-bottom
       &__card
         width: 280px
-        height: 450px
+        min-height: 450px
         margin-bottom: 24px
-        &:nth-child(8), &:nth-child(7)
-          margin: 0
+        &:nth-child(6), &:nth-child(7)
+          display: block
+  .slider
+    width: 700px
+    height: 389px
+  .swiper-text
+    max-width: 650px
 @media ( max-width: 924px )
   .footer
     &-info
       justify-content: space-evenly
     &__block
       margin-bottom: 27px
+
 @media ( max-width: 768px )
   .container
     max-width: 647px
   .header
-    padding: 26px 0 18px 0
-    margin-bottom: 30px
+    padding: 26px 0 45px 0
   .hero
     &-container
       border-radius: 8px
@@ -233,7 +249,8 @@
     &-photo
       margin-bottom: 26px
   .trend
-    margin-bottom: 74px
+    padding-bottom: 36px
+    margin-bottom: 0
     &-bottom
       &__textp
         max-width: 224px
@@ -253,6 +270,11 @@
     &-category
       &__one
         margin: 0
+  .slider
+    width: auto
+    height: auto
+    max-width: 630px
+    min-height: 415px
   .swiper
     &-title
       margin-bottom: 49px
@@ -263,7 +285,7 @@
     &-icon
       margin-bottom: 39px
   .stories
-    margin-bottom: 80px
+    padding-bottom: 75px
     &-title
       margin-top: 24px
       margin-bottom: 16px
@@ -282,7 +304,7 @@
     padding: 20px 42px 20px 20px
     width: 322px
   .footer
-    padding-top: 65px
+    padding-top: 63px
     &-container
       max-width: 648px
     &-main
@@ -293,6 +315,15 @@
       width: 726px
     &__block
       margin-right: 13px
+  .newsletter
+    background-image: url('../img/tablet.jpg')
+    &-wrapper
+      padding: 77px 119px 80px 119px
+  .thankyou
+    &__container
+      padding: 155px 0 50px 0
+    &__message
+      font-size: 40px
 
 @media ( max-width: 745px )
   .collection
@@ -369,7 +400,7 @@
     &-bottom
       &__card
         width: 260px
-        height: 450px
+        min-height: 450px
 
 @media ( max-width: 665px )
   .stories
@@ -395,7 +426,7 @@
     &-bottom
       &__card
         width: 220px
-        height: 380px
+        min-height: 380px
       &__background
         height: 280px
         padding: 100px 10px 10px 10px
@@ -442,7 +473,7 @@
 @media ( max-width: 521px )
   .hero
     &-info
-      padding: 300px 0 10px 28px
+      padding: 300px 0 40px 28px
   .trend
     &-container
       max-width: 400px
@@ -457,7 +488,7 @@
         line-height: 24px
       &__card
         width: 180px
-        height: 275px
+        min-height: 275px
       &__background
         height: 210px
         padding: 70px 10px 10px 10px
@@ -486,12 +517,14 @@
       max-width: none
       width: 100%
       height: 48px
+      border-radius: 8px
     &__icon
       top: 18px
   #subscribe-error
     margin-left: 49px
     font-size: 10px
     top: 32px
+    color: red
 @media ( max-width: 678px )
   .hero
     &-info
@@ -511,7 +544,12 @@
   .header
     &__menu
       width: 304px
-      height: 324px
+      min-height: 324px
+      right: 0
+      top: 0
+      left: 100%
+      transform: translateX(-100%)
+
 @media ( max-width: 500px )
   .hero
     &-info
@@ -536,6 +574,9 @@
     width: 270px
     height: 150px
 @media ( max-width: 420px )
+  .header
+    &__menu
+      width: 100%
   .trend
     margin-bottom: 48px
     &-top
@@ -552,7 +593,7 @@
     &-bottom
       &__card
         width: 140px
-        height: 234px
+        min-height: 234px
         margin-left: auto
         margin-right: auto
         &:nth-child(8), &:nth-child(7)
@@ -569,10 +610,28 @@
     &-image
       height: 170px
 
+@media ( max-width: 630px )
+  .collection
+    &-title
+      font-size: 40px
+      text-align: center
+    &-text
+      text-align: center
+    &-view
+      margin: auto
+
+@media ( max-width: 679px )
+  .header
+    padding: 26px 0 48px 0
+
 @media ( max-width: 400px )
+  .header
+    padding: 26px 0 31px 0
   .hero
+    padding-top: 88px
+    margin-top: 0
     &-info
-      padding: 300px 28px 10px 28px
+      padding: 300px 0 35px 28px
       text-align: center
     &-badges, &-title, &-text
       margin: auto
@@ -596,21 +655,6 @@
     &-advantages
       align-items: center
 
-@media ( max-width: 630px )
-  .collection
-    &-title
-      font-size: 40px
-      text-align: center
-    &-text
-      text-align: center
-    &-view
-      display: none
-
-@media ( max-width: 679px )
-  .header
-    padding: 26px 0 18px 0
-    margin-bottom: 30px
-
 @media ( max-width: 340px )
   &-bottom
     &__card
@@ -623,18 +667,29 @@
   .container
     max-width: 272px
   .collection
-    margin-bottom: 110px
+    padding-bottom: 59px
     &-text
       max-width: 280px
     &-container
       max-width: 290px
   .header
-    padding: 18px 0 18px 0
-    margin-bottom: 24px
+    padding: 18px 0 39px 0
+    &__menu
+      padding: 36px 24px 25px 24px
+      display: none
+      position: fixed
+      left: 50%
+      transform: translateX(-50%)
+      right: 0
+      top: 10px
+      background-color: #fff
+      width: 94%
+      &--visible
+        display: block
   .hero
-    margin-top: 88px
+    padding-top: 88px
     &-container
-      margin-bottom: 64px
+      padding-bottom: 63px
     &-info
       background-image: url('../img/hero-mobile.jpg')
       background-repeat: no-repeat
@@ -677,7 +732,6 @@
       border: 0.5px solid #1565D8
       border-radius: 8px
   .collection
-    margin-bottom: 110px
     &-photo
       margin-bottom: 19px
       grid-template-columns: 138px 138px
@@ -694,10 +748,13 @@
       font-size: 16px
       line-height: 28px
       text-align: center
-      margin-bottom: 0
-    &-view
-      display: none
+      margin-bottom: 24px
+    &-link
+      font-size: 16px
+      line-height: 28px
   .trend
+    padding-bottom: 28px
+    margin-bottom: 0
     &-category
       &__one, &__two, &__three
         font-size: 16px
@@ -711,19 +768,28 @@
         width: 14px
         height: 14px
       &__price
-        margin-right: 13px
+        margin-right: 11px
       &__info
         margin: 0px 0px 0px 0px
       &__card
-        margin-bottom: 19px
+        margin-bottom: 20px
+        margin-left: 0
+        margin-right: 0
+        &:nth-child(7), &:nth-child(8)
+          margin-left: 0
+          margin-right: 0
       &__iconp
         width: 25px
         height: 25px
-        margin-bottom: 21px
+        margin-bottom: 18px
       &__background
         padding-top: 45px
   .reviews
     margin-bottom: 67px
+    padding: 0
+  .slider
+    width: 280px
+    height: 568px
   .swiper
     &-text
       height: 360px
@@ -733,16 +799,16 @@
       text-align: center
       letter-spacing: 0.12px
       margin-bottom: 24px
-      width: 266px
+      width: 280px
     &-title
       margin-bottom: 41px
       width: 145px
     &-icon
-      margin-bottom: 27px
+      margin-bottom: 24px
       width: 69px
       height: 61px
   .stories
-    margin-bottom: 64px
+    padding-bottom: 64px
     &-container
       padding-top: 42px
     &-title
@@ -761,6 +827,9 @@
         width: 48px
         height: 48px
   .newsletter
+    background-image: url('../img/mobile.jpg')
+    &-container
+      width: auto
     &__input
       width: 280px
   .footer
@@ -810,10 +879,10 @@
     &:hover
       transform: translateY(10%)
 
-  .stories-tabs__next,
-  .stories-tabs__prev
-    &:hover
-      border: 2px solid #183B56
+  // .stories-tabs__next,
+  // .stories-tabs__prev
+  //   &:hover
+  //     border: 2px solid #183B56
   .footer-icon
     &:hover
       background-color: #c3c5c5
@@ -828,3 +897,6 @@
     &:hover
       border: 2px solid #183B56
       color: #183B56
+  .trend-bottom__icon
+    &:hover
+      opacity: 0.7

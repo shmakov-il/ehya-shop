@@ -69,13 +69,6 @@ $(document).ready(function () {
   });
 });
 
-var autoSlider = document.querySelector(".swiper-container");
-autoSlider.onmouseout = function (e) {
-  mySwiper.autoplay.start();
-};
-autoSlider.onmouseover = function (e) {
-  mySwiper.autoplay.stop();
-};
 
 // Первый слайдер
 var mySwiper = new Swiper(".slider", {
