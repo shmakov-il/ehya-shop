@@ -324,6 +324,9 @@
       padding: 155px 0 50px 0
     &__message
       font-size: 40px
+  .to-top
+    bottom: 7px
+    right: 18px
 
 @media ( max-width: 745px )
   .collection
@@ -516,7 +519,7 @@
       position: static
       max-width: none
       width: 100%
-      height: 48px
+      min-height: 48px
       border-radius: 8px
     &__icon
       top: 18px
@@ -525,6 +528,11 @@
     font-size: 10px
     top: 32px
     color: red
+  .to-top
+    bottom: 10px
+    right: 10px
+    padding: 10px 13px
+
 @media ( max-width: 678px )
   .hero
     &-info
@@ -631,7 +639,7 @@
     padding-top: 88px
     margin-top: 0
     &-info
-      padding: 300px 0 35px 28px
+      padding: 300px 0 35px 0
       text-align: center
     &-badges, &-title, &-text
       margin: auto
@@ -675,7 +683,7 @@
   .header
     padding: 18px 0 39px 0
     &__menu
-      padding: 36px 24px 25px 24px
+      padding: 26px 24px 25px 24px
       display: none
       position: fixed
       left: 50%
@@ -683,9 +691,17 @@
       right: 0
       top: 10px
       background-color: #fff
-      width: 94%
+      max-width: 304px
+      min-height: 324px
       &--visible
         display: block
+    &-item
+      margin-bottom: 10px
+    &__nav
+      margin-bottom: 9px
+    &-button
+      width: 256px
+      min-height: 40px
   .hero
     padding-top: 88px
     &-container
@@ -860,6 +876,10 @@
     &__dialog
       overflow: auto
       height: 300px
+@media ( max-width: 587px ) and  ( orientation: landscape )
+  .header__menu
+    overflow: scroll
+    height: 324px
 
 @media( min-width: 992px )
   .footer__link,
@@ -889,7 +909,8 @@
       opacity: 0.4
 
   .newsletter__button,
-  .hero-button
+  .hero-button,
+  .thankyou__button
     &:hover
       background-color: #183B56
       opacity: 0.7

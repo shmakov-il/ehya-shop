@@ -89,6 +89,7 @@ var mySwiper = new Swiper(".slider", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,  
   },
 
   // And if we need scrollbar
@@ -103,9 +104,12 @@ var mySwiperTwo = new Swiper(".myslider", {
   // loop: true,
 
   navigation: {
-    nextEl: ".stories-tabs__next",
-    prevEl: ".stories-tabs__prev",
+    // nextEl: ".icon-next", 
+    nextEl: ".stories-tabs__next", 
+    prevEl: ".stories-tabs__prev", 
+    // prevEl: ".icon-prev", 
   },
+  
 });
 
 var menuButton = document.querySelector(".button-menu");
